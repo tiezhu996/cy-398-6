@@ -11,4 +11,5 @@ class Product(models.Model):
     images = models.JSONField(default=list)
     weight_kg = models.FloatField(default=1)
     is_on_sale = models.BooleanField(default=True)
+    stock = models.PositiveIntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
